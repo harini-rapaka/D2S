@@ -23,9 +23,9 @@ if __name__ == '__main__':
     subparsers = parser.add_subparsers(help='pick a mode',dest='mode')
 
     # shared params
-   parser.add_argument("-model_path", default='/content/document2slides/models')
-    parser.add_argument("-cache_path", default='/content/document2slides/cache')
-    parser.add_argument("-result_path", default='/content/document2slides/results/')
+   parser.add_argument("-model_path", default='/content/D2S/models')
+    parser.add_argument("-cache_path", default='/content/D2S/cache')
+    parser.add_argument("-result_path", default='/content/D2S/results/')
 
     # params for caching IR
     parser_ir = subparsers.add_parser('ir', help='cache information retrieval documents')
